@@ -9,8 +9,7 @@ router.get('/signup', redirectAuthenticated , (req, res) => {
     res.render('pages/signup', {
         title: 'Sign up',
         user: req.flash('data')[0],
-        user: req.flash('data')[0],
-        errors: req.flash('errors'),
+       errors: req.flash('errors'),
     });
 });
 
